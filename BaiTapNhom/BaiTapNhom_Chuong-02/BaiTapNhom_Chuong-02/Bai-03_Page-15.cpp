@@ -172,6 +172,20 @@ void xuatSoHoanThien(int a[], int n) {
 	printf("\n");
 }
 
+void xuatViTriChanLe(int a[], int n) {
+	printf("Cac phan tu o vi tri chan: ");
+	for (int i = 0; i < n; i += 2) {
+		printf("%d ", a[i]);
+	}
+	printf("\n");
+	printf("Cac phan tu o vi tri le: ");
+	for (int i = 1; i < n; i += 2) {
+		printf("%d ", a[i]);
+	}
+	printf("\n");
+}
+
+
 int main() {
 	int a[MAX], b[MAX], c[MAX];
 	int n, m;
@@ -254,6 +268,9 @@ int main() {
 			break;
 		case 9:
 			xuatSoHoanThien(a, n);
+			break;
+		case 10:
+			xuatViTriChanLe(a, n);
 			break;
 		case 0:
 			exit(0);
