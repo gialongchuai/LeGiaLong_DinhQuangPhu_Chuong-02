@@ -47,6 +47,30 @@ void displayIntArray(int arr[], int n) {
 	printf("\n");
 }
 
+void interchangeSortAscendingFloat(float arr[], int n) {
+	int i, j;
+	float temp;
+	for (i = 0; i < n - 1; i++) {
+		for (j = i + 1; j < n; j++) {
+			if (arr[i] > arr[j]) {
+				temp = arr[i];
+				arr[i] = arr[j];
+				arr[j] = temp;
+			}
+		}
+	}
+}
+
+
+
+void displayFloatArray(float arr[], int n) {
+	int i;
+	for (i = 0; i < n; i++) {
+		printf("%.2f ", arr[i]);
+	}
+	printf("\n");
+}
+
 int main() {
 	int choice, n, i;
 	int intArr[MAX];
@@ -90,6 +114,17 @@ int main() {
 			interchangeSortDescendingInt(intArr, n);
 			printf("Mang sau khi sap xep giam: ");
 			displayIntArray(intArr, n);
+			break;
+		case 3:
+			printf("Nhap so phan tu: ");
+			scanf("%d", &n);
+			printf("Nhap cac phan tu (so thuc): ");
+			for (i = 0; i < n; i++) {
+				scanf("%f", &floatArr[i]);
+			}
+			interchangeSortAscendingFloat(floatArr, n);
+			printf("Mang sau khi sap xep tang: ");
+			displayFloatArray(floatArr, n);
 			break;
 		default:
 			printf("Lua chon khong hop le. Vui long chon lai.\n");
