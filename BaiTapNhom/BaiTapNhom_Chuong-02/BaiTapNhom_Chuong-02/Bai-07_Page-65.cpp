@@ -34,7 +34,41 @@ void xuatPhanSo(PhanSo ps) {
 	printf("%d/%d\n", ps.tuSo, ps.mauSo);
 }
 
+// Ham toi gian phan so
+void toiGian(PhanSo *ps) {
+	int a = ps->tuSo;
+	int b = ps->mauSo;
+	int gcd, temp;
 
+	// Tim uoc chung lon nhat
+	while (b != 0) {
+		temp = b;
+		b = a % b;
+		a = temp;
+	}
+	gcd = a;
+
+	ps->tuSo /= gcd;
+	ps->mauSo /= gcd;
+}
+
+// Ham tinh tong hai phan so
+PhanSo tong(PhanSo ps1, PhanSo ps2) {
+	PhanSo result;
+	result.tuSo = ps1.tuSo * ps2.mauSo + ps2.tuSo * ps1.mauSo;
+	result.mauSo = ps1.mauSo * ps2.mauSo;
+	toiGian(&result);
+	return result;
+}
+
+// Ham tinh hieu hai phan so
+PhanSo hieu(PhanSo ps1, PhanSo ps2) {
+	PhanSo result;
+	result.tuSo = ps1.tuSo * ps2.mauSo - ps2.tuSo * ps1.mauSo;
+	result.mauSo = ps1.mauSo * ps2.mauSo;
+	toiGian(&result);
+	return result;
+}
 
 int main() {
 	PhanSo ps1, ps2;
@@ -69,7 +103,14 @@ int main() {
 			printf("Phan so 2: ");
 			xuatPhanSo(ps2);
 			break;
-		
+		case 5:
+			printf("Tong hai phan so: ");
+			xuatPhanSo(tong(ps1, ps2));
+			break;
+		case 6:
+			printf("Hieu hai phan so: ");
+			xuatPhanSo(hieu(ps1, ps2));
+			break;
 		case 0:
 			printf("Thoat chuong trinh.\n");
 			break;
