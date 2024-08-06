@@ -33,5 +33,8 @@
     <ClCompile Include="Bai-06_Page-61.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Bai-07_Page-65.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
