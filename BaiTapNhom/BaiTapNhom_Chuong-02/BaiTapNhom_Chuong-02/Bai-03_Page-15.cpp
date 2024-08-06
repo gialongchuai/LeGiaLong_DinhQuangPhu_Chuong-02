@@ -112,6 +112,16 @@ int demPhanTuX(int a[], int n, int x) {
 	return count;
 }
 
+int demLonHonX(int a[], int n, int x) {
+	int count = 0;
+	for (int i = 0; i < n; i++) {
+		if (a[i] > x) {
+			count++;
+		}
+	}
+	return count;
+}
+
 int main() {
 	int a[MAX], b[MAX], c[MAX];
 	int n, m;
@@ -180,6 +190,11 @@ int main() {
 			printf("Nhap gia tri x: ");
 			scanf("%d", &x);
 			printf("So phan tu %d trong mang: %d\n", x, demPhanTuX(a, n, x));
+			break;
+		case 6:
+			printf("Nhap gia tri x: ");
+			scanf("%d", &x);
+			printf("So phan tu lon hon %d: %d\n", x, demLonHonX(a, n, x));
 			break;
 		case 0:
 			exit(0);
