@@ -204,6 +204,23 @@ void xuatMaxMinVaViTri(int a[], int n) {
 	printf("\n");
 }
 
+void mergeSortedArrays(int a[], int b[], int n, int c[], int m) {
+	int i = 0, j = 0, k = 0;
+	while (i < n && j < m) {
+		if (b[i] < c[j]) {
+			a[k++] = b[i++];
+		}
+		else {
+			a[k++] = c[j++];
+		}
+	}
+	while (i < n) {
+		a[k++] = b[i++];
+	}
+	while (j < m) {
+		a[k++] = c[j++];
+	}
+}
 
 int main() {
 	int a[MAX], b[MAX], c[MAX];
@@ -293,6 +310,22 @@ int main() {
 			break;
 		case 11:
 			xuatMaxMinVaViTri(a, n);
+			break;
+		case 12:
+			printf("Nhap so phan tu cua day b: ");
+			scanf("%d", &m);
+			for (int i = 0; i < m; i++) {
+				printf("Nhap b[%d]: ", i);
+				scanf("%d", &b[i]);
+			}
+			printf("Nhap so phan tu cua day c: ");
+			scanf("%d", &n);
+			for (int i = 0; i < n; i++) {
+				printf("Nhap c[%d]: ", i);
+				scanf("%d", &c[i]);
+			}
+			mergeSortedArrays(a, b, m, c, n);
+			xuatMang(a, m + n);
 			break;
 		case 0:
 			exit(0);
