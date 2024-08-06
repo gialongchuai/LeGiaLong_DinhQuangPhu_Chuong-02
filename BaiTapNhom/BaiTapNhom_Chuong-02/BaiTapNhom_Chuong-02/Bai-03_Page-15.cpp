@@ -122,6 +122,14 @@ int demLonHonX(int a[], int n, int x) {
 	return count;
 }
 
+int tongMang(int a[], int n) {
+	int sum = 0;
+	for (int i = 0; i < n; i++) {
+		sum += a[i];
+	}
+	return sum;
+}
+
 int main() {
 	int a[MAX], b[MAX], c[MAX];
 	int n, m;
@@ -195,6 +203,9 @@ int main() {
 			printf("Nhap gia tri x: ");
 			scanf("%d", &x);
 			printf("So phan tu lon hon %d: %d\n", x, demLonHonX(a, n, x));
+			break;
+		case 7:
+			printf("Tong cac phan tu cua mang: %d\n", tongMang(a, n));
 			break;
 		case 0:
 			exit(0);
