@@ -75,6 +75,33 @@ void demChanLe(int a[], int n, int *chan, int *le) {
 	}
 }
 
+int timKiemTuyenTinh(int a[], int n, int x) {
+	for (int i = 0; i < n; i++) {
+		if (a[i] == x) {
+			return i;
+		}
+	}
+	return -1;
+}
+
+int binarySearch(int arr[], int left, int right, int x) {
+	while (left <= right) {
+		int mid = left + (right - left) / 2;
+
+		if (arr[mid] == x) {
+			return mid;
+		}
+
+		if (arr[mid] < x) {
+			left = mid + 1;
+		}
+		else {
+			right = mid - 1;
+		}
+	}
+	return -1;
+}
+
 
 int main() {
 	int a[MAX], b[MAX], c[MAX];
@@ -115,6 +142,30 @@ int main() {
 			demChanLe(a, n, &chan, &le);
 			printf("So phan tu chan: %d\n", chan);
 			printf("So phan tu le: %d\n", le);
+			break;
+		case 4:
+			printf("Nhap gia tri x can tim: ");
+			scanf("%d", &x);
+			printf("1. Tim kiem tuyen tinh\n");
+			printf("2. Tim kiem nhi phan\n");
+			int searchType;
+			scanf("%d", &searchType);
+			if (searchType == 1) {
+				result = timKiemTuyenTinh(a, n, x);
+			}
+			else if (searchType == 2) {
+				result = binarySearch(a, 0, n - 1, x);
+			}
+			else {
+				printf("Lua chon khong hop le\n");
+				break;
+			}
+			if (result != -1) {
+				printf("Gia tri %d duoc tim thay tai vi tri %d\n", x, result);
+			}
+			else {
+				printf("Khong tim thay gia tri %d trong mang\n", x);
+			}
 			break;
 		case 0:
 			exit(0);
