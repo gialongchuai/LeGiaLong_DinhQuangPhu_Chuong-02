@@ -21,5 +21,8 @@
     <ClCompile Include="Bai-02_Page-14.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Bai-03_Page-15.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
