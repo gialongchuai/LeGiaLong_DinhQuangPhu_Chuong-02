@@ -143,6 +143,20 @@ void displayStringArray(char arr[][MAX], int n) {
 	printf("\n");
 }
 
+void interchangeSortDescendingString(char arr[][MAX], int n) {
+	int i, j;
+	char temp[MAX];
+	for (i = 0; i < n - 1; i++) {
+		for (j = i + 1; j < n; j++) {
+			if (strcmp(arr[i], arr[j]) < 0) {
+				strcpy(temp, arr[i]);
+				strcpy(arr[i], arr[j]);
+				strcpy(arr[j], temp);
+			}
+		}
+	}
+}
+
 
 int main() {
 	int choice, n, i;
@@ -242,6 +256,20 @@ int main() {
 			interchangeSortAscendingString(strArr, n);
 			printf("Mang sau khi sap xep tang: ");
 			displayStringArray(strArr, n);
+			break;
+		case 8:
+			printf("Nhap so phan tu: ");
+			scanf("%d", &n);
+			printf("Nhap cac chuoi ky tu: ");
+			for (i = 0; i < n; i++) {
+				scanf("%s", strArr[i]);
+			}
+			interchangeSortDescendingString(strArr, n);
+			printf("Mang sau khi sap xep giam: ");
+			displayStringArray(strArr, n);
+			break;
+		case 9:
+			printf("Thoat chuong trinh.\n");
 			break;
 		default:
 			printf("Lua chon khong hop le. Vui long chon lai.\n");
