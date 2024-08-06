@@ -27,5 +27,8 @@
     <ClCompile Include="Bai-04_Page-27.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Bai-05_Page-58.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
