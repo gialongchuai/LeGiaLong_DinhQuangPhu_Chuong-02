@@ -1,13 +1,13 @@
-﻿Build started 06/08/2024 6:45:07 CH.
+﻿Build started 06/08/2024 6:47:43 CH.
      1>Project "C:\Users\MSII\Desktop\daylen\BaiTapNhom\BaiTapNhom_Chuong-02\BaiTapNhom_Chuong-02\BaiTapNhom_Chuong-02.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt "Bai-05_Page-58.cpp"
          Bai-05_Page-58.cpp
-     1>c:\users\msii\desktop\daylen\baitapnhom\baitapnhom_chuong-02\baitapnhom_chuong-02\bai-05_page-58.cpp(74): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>c:\users\msii\desktop\daylen\baitapnhom\baitapnhom_chuong-02\baitapnhom_chuong-02\bai-05_page-58.cpp(94): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(283) : see declaration of 'scanf'
-     1>c:\users\msii\desktop\daylen\baitapnhom\baitapnhom_chuong-02\baitapnhom_chuong-02\bai-05_page-58.cpp(78): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>c:\users\msii\desktop\daylen\baitapnhom\baitapnhom_chuong-02\baitapnhom_chuong-02\bai-05_page-58.cpp(98): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(283) : see declaration of 'scanf'
-     1>c:\users\msii\desktop\daylen\baitapnhom\baitapnhom_chuong-02\baitapnhom_chuong-02\bai-05_page-58.cpp(90): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>c:\users\msii\desktop\daylen\baitapnhom\baitapnhom_chuong-02\baitapnhom_chuong-02\bai-05_page-58.cpp(110): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(283) : see declaration of 'scanf'
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\MSII\Desktop\daylen\BaiTapNhom\BaiTapNhom_Chuong-02\Debug\BaiTapNhom_Chuong-02.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\MSII\Desktop\daylen\BaiTapNhom\BaiTapNhom_Chuong-02\Debug\BaiTapNhom_Chuong-02.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\MSII\Desktop\daylen\BaiTapNhom\BaiTapNhom_Chuong-02\Debug\BaiTapNhom_Chuong-02.lib" /MACHINE:X86 "Debug\Bai-05_Page-58.obj"
@@ -16,4 +16,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:00.72
+Time Elapsed 00:00:00.70

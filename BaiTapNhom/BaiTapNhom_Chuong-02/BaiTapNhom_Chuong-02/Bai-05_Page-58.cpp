@@ -66,6 +66,26 @@ int viTriLonNhatCuoiCung(int a[], int n) {
 	return viTri;
 }
 
+
+// Kiem tra mang co toan la so chan khong
+bool toanSoChan(int a[], int n) {
+	for (int i = 0; i < n; i++) {
+		if (a[i] % 2 != 0) return false;
+	}
+	return true;
+}
+
+// Kiem tra mang co phai day so chan le xen ke khong
+bool chanLeXenKe(int a[], int n) {
+	for (int i = 0; i < n - 1; i++) {
+		if ((a[i] % 2 == 0 && a[i + 1] % 2 == 0) ||
+			(a[i] % 2 != 0 && a[i + 1] % 2 != 0)) {
+			return false;
+		}
+	}
+	return true;
+}
+
 int main() {
 	int a[100];
 	int n, choice;
@@ -99,6 +119,22 @@ int main() {
 			break;
 		case 3:
 			printf("Vi tri so lon nhat cuoi cung: %d\n", viTriLonNhatCuoiCung(a, n));
+			break;
+		case 4:
+			if (toanSoChan(a, n)) {
+				printf("Mang toan la so chan.\n");
+			}
+			else {
+				printf("Mang co so le.\n");
+			}
+			break;
+		case 5:
+			if (chanLeXenKe(a, n)) {
+				printf("Mang la day so chan le xen ke.\n");
+			}
+			else {
+				printf("Mang khong phai la day so chan le xen ke.\n");
+			}
 			break;
 		case 0:
 			printf("Thoat chuong trinh.\n");
