@@ -185,6 +185,25 @@ void xuatViTriChanLe(int a[], int n) {
 	printf("\n");
 }
 
+void xuatMaxMinVaViTri(int a[], int n) {
+	int max = timMax(a, n);
+	int min = timMin(a, n);
+	printf("Gia tri lon nhat la %d o vi tri: ", max);
+	for (int i = 0; i < n; i++) {
+		if (a[i] == max) {
+			printf("%d ", i);
+		}
+	}
+	printf("\n");
+	printf("Gia tri nho nhat la %d o vi tri: ", min);
+	for (int i = 0; i < n; i++) {
+		if (a[i] == min) {
+			printf("%d ", i);
+		}
+	}
+	printf("\n");
+}
+
 
 int main() {
 	int a[MAX], b[MAX], c[MAX];
@@ -271,6 +290,9 @@ int main() {
 			break;
 		case 10:
 			xuatViTriChanLe(a, n);
+			break;
+		case 11:
+			xuatMaxMinVaViTri(a, n);
 			break;
 		case 0:
 			exit(0);
