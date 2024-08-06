@@ -69,7 +69,23 @@ PhanSo hieu(PhanSo ps1, PhanSo ps2) {
 	toiGian(&result);
 	return result;
 }
+// Ham tinh tich hai phan so
+PhanSo tich(PhanSo ps1, PhanSo ps2) {
+	PhanSo result;
+	result.tuSo = ps1.tuSo * ps2.tuSo;
+	result.mauSo = ps1.mauSo * ps2.mauSo;
+	toiGian(&result);
+	return result;
+}
 
+// Ham tinh thuong hai phan so
+PhanSo thuong(PhanSo ps1, PhanSo ps2) {
+	PhanSo result;
+	result.tuSo = ps1.tuSo * ps2.mauSo;
+	result.mauSo = ps1.mauSo * ps2.tuSo;
+	toiGian(&result);
+	return result;
+}
 int main() {
 	PhanSo ps1, ps2;
 	int luaChon;
@@ -110,6 +126,14 @@ int main() {
 		case 6:
 			printf("Hieu hai phan so: ");
 			xuatPhanSo(hieu(ps1, ps2));
+			break;
+		case 7:
+			printf("Tich hai phan so: ");
+			xuatPhanSo(tich(ps1, ps2));
+			break;
+		case 8:
+			printf("Thuong hai phan so: ");
+			xuatPhanSo(thuong(ps1, ps2));
 			break;
 		case 0:
 			printf("Thoat chuong trinh.\n");
