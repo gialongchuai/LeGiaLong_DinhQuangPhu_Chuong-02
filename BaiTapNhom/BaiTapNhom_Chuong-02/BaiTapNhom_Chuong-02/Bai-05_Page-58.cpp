@@ -42,6 +42,7 @@ bool tatCaSoLe(int n) {
 	return true;
 }
 
+
 // Xuat cac phan tu ma tung chu so cua no la so le
 void xuatSoLe(int a[], int n) {
 	for (int i = 0; i < n; i++) {
@@ -50,6 +51,19 @@ void xuatSoLe(int a[], int n) {
 		}
 	}
 	printf("\n");
+}
+
+// Tim vi tri so lon nhat cuoi cung cua mang
+int viTriLonNhatCuoiCung(int a[], int n) {
+	int max = a[0];
+	int viTri = 0;
+	for (int i = 1; i < n; i++) {
+		if (a[i] >= max) {
+			max = a[i];
+			viTri = i;
+		}
+	}
+	return viTri;
 }
 
 int main() {
@@ -82,6 +96,9 @@ int main() {
 		case 2:
 			printf("Cac phan tu ma tung chu so cua no la so le: ");
 			xuatSoLe(a, n);
+			break;
+		case 3:
+			printf("Vi tri so lon nhat cuoi cung: %d\n", viTriLonNhatCuoiCung(a, n));
 			break;
 		case 0:
 			printf("Thoat chuong trinh.\n");
