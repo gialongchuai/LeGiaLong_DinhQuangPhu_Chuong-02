@@ -4,7 +4,9 @@
 	1. Kiểm tra mảng có chứa toàn bộ số nguyên tố hay không?
 	2. Kiểm tra mảng có đối xứng hay không?
 	3. Kiểm tra mảng có tăng dần/giảm dần/không tăng không
-	giảm?*/#include <stdio.h>
+	giảm?
+*/
+#include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
 
@@ -33,7 +35,29 @@ bool kiemTraMangDoiXung(int a[], int n) {
 	return true;
 }
 
+// Ham kiem tra mang tang dan
+bool kiemTraTangDan(int a[], int n) {
+	for (int i = 0; i < n - 1; i++) {
+		if (a[i] > a[i + 1]) return false;
+	}
+	return true;
+}
 
+// Ham kiem tra mang giam dan
+bool kiemTraGiamDan(int a[], int n) {
+	for (int i = 0; i < n - 1; i++) {
+		if (a[i] < a[i + 1]) return false;
+	}
+	return true;
+}
+
+// Ham kiem tra mang khong tang khong giam
+bool kiemTraKhongTangKhongGiam(int a[], int n) {
+	for (int i = 0; i < n - 1; i++) {
+		if (a[i] > a[i + 1]) return false;
+	}
+	return true;
+}
 
 int main() {
 	int choice;
@@ -80,7 +104,20 @@ int main() {
 				printf("Mang khong doi xung.\n");
 			}
 			break;
-		
+		case 3:
+			if (kiemTraTangDan(a, n)) {
+				printf("Mang tang dan.\n");
+			}
+			else if (kiemTraGiamDan(a, n)) {
+				printf("Mang giam dan.\n");
+			}
+			else if (kiemTraKhongTangKhongGiam(a, n)) {
+				printf("Mang khong tang khong giam.\n");
+			}
+			else {
+				printf("Mang khong tang khong giam va khong giam khong tang.\n");
+			}
+			break;
 		case 0:
 			printf("Thoat chuong trinh.\n");
 			break;
