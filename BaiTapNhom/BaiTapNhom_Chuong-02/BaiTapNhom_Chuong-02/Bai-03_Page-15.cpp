@@ -130,6 +130,26 @@ int tongMang(int a[], int n) {
 	return sum;
 }
 
+int isPrime(int n) {
+	if (n <= 1) return 0;
+	if (n == 2) return 1;
+	if (n % 2 == 0) return 0;
+	for (int i = 3; i <= (int)sqrt((double)n); i += 2) {
+		if (n % i == 0) return 0;
+	}
+	return 1;
+}
+
+void xuatSoNguyenTo(int a[], int n) {
+	printf("Cac so nguyen to trong mang: ");
+	for (int i = 0; i < n; i++) {
+		if (isPrime(a[i])) {
+			printf("%d ", a[i]);
+		}
+	}
+	printf("\n");
+}
+
 int main() {
 	int a[MAX], b[MAX], c[MAX];
 	int n, m;
@@ -206,6 +226,9 @@ int main() {
 			break;
 		case 7:
 			printf("Tong cac phan tu cua mang: %d\n", tongMang(a, n));
+			break;
+		case 8:
+			xuatSoNguyenTo(a, n);
 			break;
 		case 0:
 			exit(0);
