@@ -150,6 +150,28 @@ void xuatSoNguyenTo(int a[], int n) {
 	printf("\n");
 }
 
+int isPerfect(int n) {
+	if (n <= 0) return 0;
+	int sum = 0;
+	for (int i = 1; i <= n / 2; i++) {
+		if (n % i == 0) {
+			sum += i;
+		}
+	}
+	return sum == n;
+}
+
+
+void xuatSoHoanThien(int a[], int n) {
+	printf("Cac so hoan thien trong mang: ");
+	for (int i = 0; i < n; i++) {
+		if (isPerfect(a[i])) {
+			printf("%d ", a[i]);
+		}
+	}
+	printf("\n");
+}
+
 int main() {
 	int a[MAX], b[MAX], c[MAX];
 	int n, m;
@@ -229,6 +251,9 @@ int main() {
 			break;
 		case 8:
 			xuatSoNguyenTo(a, n);
+			break;
+		case 9:
+			xuatSoHoanThien(a, n);
 			break;
 		case 0:
 			exit(0);
