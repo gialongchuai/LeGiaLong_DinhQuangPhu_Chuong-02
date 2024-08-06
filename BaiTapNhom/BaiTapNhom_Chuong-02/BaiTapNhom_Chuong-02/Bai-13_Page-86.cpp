@@ -5,7 +5,8 @@
 	tăng dòng lẻ giảm.
 	Bài 2: Sắp xếp các phần tử trong ma trận sao cho cột chẵn
 	tăng cột lẻ giảm.
-	Bài 3: Sắp xếp ma trận tăng dần/giảm dần theo zic-zac.
+	Bài 3: Sắp xếp ma trận tăng dần/giảm dần theo zic-zac.
+
 */
 
 #include <stdio.h>
