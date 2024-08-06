@@ -1,17 +1,21 @@
-﻿Build started 06/08/2024 6:05:54 CH.
+﻿Build started 06/08/2024 6:10:50 CH.
      1>Project "C:\Users\MSII\Desktop\daylen\BaiTapNhom\BaiTapNhom_Chuong-02\BaiTapNhom_Chuong-02\BaiTapNhom_Chuong-02.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt "Bai-04_Page-27.cpp"
          Bai-04_Page-27.cpp
-     1>c:\users\msii\desktop\daylen\baitapnhom\baitapnhom_chuong-02\baitapnhom_chuong-02\bai-04_page-27.cpp(56): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>c:\users\msii\desktop\daylen\baitapnhom\baitapnhom_chuong-02\baitapnhom_chuong-02\bai-04_page-27.cpp(69): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(283) : see declaration of 'scanf'
-     1>c:\users\msii\desktop\daylen\baitapnhom\baitapnhom_chuong-02\baitapnhom_chuong-02\bai-04_page-27.cpp(61): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>c:\users\msii\desktop\daylen\baitapnhom\baitapnhom_chuong-02\baitapnhom_chuong-02\bai-04_page-27.cpp(74): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(283) : see declaration of 'scanf'
-     1>c:\users\msii\desktop\daylen\baitapnhom\baitapnhom_chuong-02\baitapnhom_chuong-02\bai-04_page-27.cpp(64): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>c:\users\msii\desktop\daylen\baitapnhom\baitapnhom_chuong-02\baitapnhom_chuong-02\bai-04_page-27.cpp(77): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(283) : see declaration of 'scanf'
-     1>c:\users\msii\desktop\daylen\baitapnhom\baitapnhom_chuong-02\baitapnhom_chuong-02\bai-04_page-27.cpp(41): warning C4101: 'charArr' : unreferenced local variable
-     1>c:\users\msii\desktop\daylen\baitapnhom\baitapnhom_chuong-02\baitapnhom_chuong-02\bai-04_page-27.cpp(40): warning C4101: 'floatArr' : unreferenced local variable
-     1>c:\users\msii\desktop\daylen\baitapnhom\baitapnhom_chuong-02\baitapnhom_chuong-02\bai-04_page-27.cpp(42): warning C4101: 'strArr' : unreferenced local variable
+     1>c:\users\msii\desktop\daylen\baitapnhom\baitapnhom_chuong-02\baitapnhom_chuong-02\bai-04_page-27.cpp(85): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(283) : see declaration of 'scanf'
+     1>c:\users\msii\desktop\daylen\baitapnhom\baitapnhom_chuong-02\baitapnhom_chuong-02\bai-04_page-27.cpp(88): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(283) : see declaration of 'scanf'
+     1>c:\users\msii\desktop\daylen\baitapnhom\baitapnhom_chuong-02\baitapnhom_chuong-02\bai-04_page-27.cpp(54): warning C4101: 'charArr' : unreferenced local variable
+     1>c:\users\msii\desktop\daylen\baitapnhom\baitapnhom_chuong-02\baitapnhom_chuong-02\bai-04_page-27.cpp(53): warning C4101: 'floatArr' : unreferenced local variable
+     1>c:\users\msii\desktop\daylen\baitapnhom\baitapnhom_chuong-02\baitapnhom_chuong-02\bai-04_page-27.cpp(55): warning C4101: 'strArr' : unreferenced local variable
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\MSII\Desktop\daylen\BaiTapNhom\BaiTapNhom_Chuong-02\Debug\BaiTapNhom_Chuong-02.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\MSII\Desktop\daylen\BaiTapNhom\BaiTapNhom_Chuong-02\Debug\BaiTapNhom_Chuong-02.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\MSII\Desktop\daylen\BaiTapNhom\BaiTapNhom_Chuong-02\Debug\BaiTapNhom_Chuong-02.lib" /MACHINE:X86 "Debug\Bai-04_Page-27.obj"
          BaiTapNhom_Chuong-02.vcxproj -> C:\Users\MSII\Desktop\daylen\BaiTapNhom\BaiTapNhom_Chuong-02\Debug\BaiTapNhom_Chuong-02.exe
@@ -19,4 +23,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:00.70
+Time Elapsed 00:00:00.77

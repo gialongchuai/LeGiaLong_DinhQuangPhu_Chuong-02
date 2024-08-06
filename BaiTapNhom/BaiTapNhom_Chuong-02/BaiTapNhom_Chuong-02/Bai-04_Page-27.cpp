@@ -26,6 +26,19 @@ void interchangeSortAscendingInt(int arr[], int n) {
 	}
 }
 
+void interchangeSortDescendingInt(int arr[], int n) {
+	int i, j, temp;
+	for (i = 0; i < n - 1; i++) {
+		for (j = i + 1; j < n; j++) {
+			if (arr[i] < arr[j]) {
+				temp = arr[i];
+				arr[i] = arr[j];
+				arr[j] = temp;
+			}
+		}
+	}
+}
+
 void displayIntArray(int arr[], int n) {
 	int i;
 	for (i = 0; i < n; i++) {
@@ -67,7 +80,17 @@ int main() {
 			printf("Mang sau khi sap xep tang: ");
 			displayIntArray(intArr, n);
 			break;
-		
+		case 2:
+			printf("Nhap so phan tu: ");
+			scanf("%d", &n);
+			printf("Nhap cac phan tu (so nguyen): ");
+			for (i = 0; i < n; i++) {
+				scanf("%d", &intArr[i]);
+			}
+			interchangeSortDescendingInt(intArr, n);
+			printf("Mang sau khi sap xep giam: ");
+			displayIntArray(intArr, n);
+			break;
 		default:
 			printf("Lua chon khong hop le. Vui long chon lai.\n");
 			break;
