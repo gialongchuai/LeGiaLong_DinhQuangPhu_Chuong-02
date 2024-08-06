@@ -31,6 +31,27 @@ int demSoNguyenTo(int a[], int n) {
 }
 
 
+// Kiem tra tung chu so cua mot so co phai so le
+bool tatCaSoLe(int n) {
+	n = n < 0 ? -n : n; // Xu ly so am
+	while (n > 0) {
+		int chuSo = n % 10;
+		if (chuSo % 2 == 0) return false;
+		n /= 10;
+	}
+	return true;
+}
+
+// Xuat cac phan tu ma tung chu so cua no la so le
+void xuatSoLe(int a[], int n) {
+	for (int i = 0; i < n; i++) {
+		if (tatCaSoLe(a[i])) {
+			printf("%d ", a[i]);
+		}
+	}
+	printf("\n");
+}
+
 int main() {
 	int a[100];
 	int n, choice;
@@ -58,7 +79,10 @@ int main() {
 		case 1:
 			printf("So phan tu la so nguyen to: %d\n", demSoNguyenTo(a, n));
 			break;
-		
+		case 2:
+			printf("Cac phan tu ma tung chu so cua no la so le: ");
+			xuatSoLe(a, n);
+			break;
 		case 0:
 			printf("Thoat chuong trinh.\n");
 			break;
