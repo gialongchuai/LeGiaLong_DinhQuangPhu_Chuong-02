@@ -102,6 +102,15 @@ int binarySearch(int arr[], int left, int right, int x) {
 	return -1;
 }
 
+int demPhanTuX(int a[], int n, int x) {
+	int count = 0;
+	for (int i = 0; i < n; i++) {
+		if (a[i] == x) {
+			count++;
+		}
+	}
+	return count;
+}
 
 int main() {
 	int a[MAX], b[MAX], c[MAX];
@@ -166,6 +175,11 @@ int main() {
 			else {
 				printf("Khong tim thay gia tri %d trong mang\n", x);
 			}
+			break;
+		case 5:
+			printf("Nhap gia tri x: ");
+			scanf("%d", &x);
+			printf("So phan tu %d trong mang: %d\n", x, demPhanTuX(a, n, x));
 			break;
 		case 0:
 			exit(0);
